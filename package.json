@@ -1,0 +1,55 @@
+{
+  "name": "parse-token",
+  "version": "0.0.1",
+  "description": "Helpful OAuth token response wrapper",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "del dist",
+    "build": "tsc",
+    "prepare": "run-s clean build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasraydeniscool/parse-token.git"
+  },
+  "keywords": [
+    "oauth",
+    "oauth2",
+    "openid",
+    "openid connect",
+    "access token",
+    "token",
+    "expires_in"
+  ],
+  "author": "Thomas Rayden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thomasraydeniscool/parse-token/issues"
+  },
+  "homepage": "https://github.com/thomasraydeniscool/parse-token#readme",
+  "dependencies": {
+    "date-fns": "2.8.0",
+    "ow": "0.15.0",
+    "type-fest": "0.8.1"
+  },
+  "devDependencies": {
+    "@types/date-fns": "2.6.0",
+    "@types/jest": "24.0.23",
+    "del-cli": "3.0.0",
+    "jest": "24.9.0",
+    "npm-run-all": "4.1.5",
+    "ts-jest": "24.1.0",
+    "tslint": "5.20.1",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-config-standard": "9.0.0",
+    "typescript": "3.7.2"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
